@@ -1,24 +1,24 @@
 // Your code goes here
 
-// 1. Window alert
 
-// let page = window.addEventListener('load', e => {
-//     alert(`WARNING!!! The colors on this page change rapidly!!!!`)
+
+let page = window.addEventListener('load', e => {
+    alert(`WARNING!!! The colors on this page change rapidly!!!! It might cause epileptic fits!!!`)
     
-// });
+});
 
-// 2. Change Background color
+
 
 const bodyBGC = document.querySelector('body').addEventListener('mouseenter', event => {
     event.target.style.backgroundColor =" rgba(93, 181, 244, 0.69)";
 })
 
-//
+
 const bodyBGCB = document.querySelector('body').addEventListener('mouseleave', event => {
     event.target.style.backgroundColor =" rgba(94, 84, 244, 0.69)";
 })
 
-// 3. Change the colors randomly
+
 
 let words = document.querySelector('body');
 
@@ -26,7 +26,7 @@ let words = document.querySelector('body');
           event.target.style.color = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
         });
     
-// 4.
+
 
 let button = document.querySelectorAll('.btn');
 
@@ -36,7 +36,7 @@ button.forEach( item => {
 })});
 
 
-// 5. Nav
+
 
 let nav = document.querySelectorAll('a')
 
@@ -45,7 +45,7 @@ nav.forEach( item => {
   item.textContent = 'New label';
 })});
 
-// 6.
+
 let logo = document.querySelector('.logo-heading');
 document.addEventListener('scroll', event => {
   logo.style.transition = 'all 4s ease'
@@ -53,7 +53,7 @@ document.addEventListener('scroll', event => {
 
 })
 
-// 7.
+
 
 let img = document.querySelectorAll('img');
 
@@ -64,7 +64,7 @@ img.forEach(item => {
 
 })});
 
-// 8.
+
 
 window.addEventListener('scroll', event => {
   if (window.scrollY === 0) {
